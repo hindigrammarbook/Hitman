@@ -9,13 +9,14 @@ import Home1 from "../assets/Home1.jpg"
 import Home2 from "../assets/Home2.jpg"
 import Home3 from "../assets/Home3.jpg"
 import { motion } from "framer-motion";
-import client1 from "../assets/profile.png";
-import client2 from "../assets/man.png";
-import client3 from "../assets/boy.png";
-import client4 from "../assets/woman.png";
-import client5 from "../assets/web3.png"; 
+import client1 from "../assets/circle.png";
+import client2 from "../assets/design.png";
+import client3 from "../assets/botanical.png";
+import client4 from "../assets/innova.png";
+import client5 from "../assets/innovate.png";
+import client6 from "../assets/system.png";
 import boy from "../assets/boy.png";
-import woman from "../assets/boy.png";
+import woman from "../assets/woman.png";
 import man from "../assets/man.png";
 import profile from "../assets/profile.png";
 
@@ -166,66 +167,66 @@ const Home = () => {
 
 
     <div className="bg-gray-100 py-16">
-      <div className="text-center mb-8">
+      <div className="text-center mb-10">
         <h2 className="text-4xl font-bold mb-12 text-gray-800">Our Clients</h2>
       </div>
 
-      <div className="relative overflow-hidden mb-16">
+      <div className="relative overflow-hidden mt-10 mb-8">
         <div className="flex items-center justify-start space-x-8 animate-slide-left">
           <div className="flex space-x-8">
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client5} alt="Client 5" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client3} alt="Client 3" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client4} alt="Client 4" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client5} alt="Client 5" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client6} alt="Client 1" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client3} alt="Client 2" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client4} alt="Client 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client6} alt="Client 2" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
               <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client3} alt="Client 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client1} alt="Client 1" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-32 h-32 overflow-hidden border-2 border-gray-300 rounded-lg">
-              <img src={client2} alt="Client 2" className="w-full h-full object-cover" />
+            <div className="w-48 h-28 overflow-hidden border-2 border-gray-300 rounded-sm">
+              <img src={client6} alt="Client 2" className="w-full h-full object-cover" />
             </div>
           
         </div>
@@ -233,14 +234,14 @@ const Home = () => {
       </div>
       </div>
 
-    <div className="flex flex-col items-center  bg-slate-900 space-y-8">
-  <div className="text-center animate-fade-in">
+   <div className="flex flex-col items-center  bg-slate-900 space-y-8">
+    <div className="text-center animate-fade-in">
     <h1 className="text-6xl font-bold mt-10 mb-10 text-white">Meet Our Team</h1>
-  </div>
+    </div>
   <div className="grid grid-cols-2 pb-10  md:grid-cols-4 gap-8 animate-fade-up">
     <div className="flex flex-col px-10 justify-center items-center space-y-2">
       <img
-        className="w-48 h-48   rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-300"
+        className="w-48 h-48   rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-300" 
         src={boy}
         alt="director"
       />
