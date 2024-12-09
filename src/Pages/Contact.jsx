@@ -47,7 +47,7 @@ const ContactUs = () => {
                 icon: "📱",
               },
               {
-                title: "Content Marketing",
+                title: "Static Websites",
                 description:
                   "Craft compelling content that resonates with your audience and drives conversions.",
                 icon: "✍️",
