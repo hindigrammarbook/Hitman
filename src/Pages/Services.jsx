@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion"; // For animations
-import dm1 from "../assets/dm1.png"; // Your image import
+import { motion } from "framer-motion"; 
+import dm1 from "../assets/dm1.png";
 import dm2 from "../assets/dm2.jpg";
 import dm3 from "../assets/dm3.png";
 import dm from "../assets/dm.webp";
@@ -12,7 +12,8 @@ import web4 from "../assets/web4.jpg";
 import web5 from "../assets/web5.png";
 import web6 from "../assets/web6.png";
 import { Link } from "react-router-dom";
-import { link } from "framer-motion/client";
+
+
 
 
 const Services = () => {
@@ -21,15 +22,15 @@ const Services = () => {
       
       services: [
         { name: "SMM", image: dm, description:"Search Engine Optimization (SEO) is actually a strategy that helps improve web page presence using digital marketing while making its content more accessible to the search engines. ", link:"/services/smm"},
-        { name: "SMO", image: dm2, description: "Social media optimization is using social media to amplify the message of an organization and its online presence. In digital marketing, SMO plays a role in creating awareness for new products and services, engaging with customers, and countering negative news.",link:"/services/smo" },
-        { name: "PPC", image: dm3, description: "Pay-per-click (PPC) is an online advertising model where the advertiser pays a publisher every time someone clicks on their ad. Also known as the cost-per-click (CPC) model, PPC is primarily offered by search engines (such as Google) and social networks (such as Facebook). Some of the most popular PPC platforms include Google Ads, Facebook Ads, and Twitter Ads.",link:"/services/ppc"  },
+        { name: "SMO", image: dm2, description: "Social media optimization is using social media to amplify the message of an organization and its online presence. ",link:"/services/smo" },
+        { name: "PPC", image: dm3, description: "Pay-per-click (PPC) is an online advertising model where the advertiser pays a publisher every time someone clicks on their ad. ",link:"/services/ppc"  },
         { name: "SEO", image: dm1, description: "Search Engine Optimization (SEO) is actually a strategy that helps improve web page presence using digital marketing while making its content more accessible to the search engines." ,link:"/services/seo"},
-        { name: "Lead Generation", image: image3,description:"A lead is a prospect who expresses interest in a company's products or services but isn't ready to buy yet. Normally, interest is expressed when contact information is exchanged. For instance, when someone gives a name and an email address for access to content.It is very important not to confuse leads with prospects.",link:"/services/lead"},
+        { name: "Lead Generation", image: image3,description:"A lead is a prospect who expresses interest in a company's products or services but isn't ready to buy yet. Normally, interest is expressed when contact information is exchanged. .",link:"/services/lead"},
         { name: "YouTube Marketing", image: dm1, description: "Promote your business on YouTube for greater reach." ,link:"/services/youtube"},
         { name: "Facebook Marketing", image: dm2, description: "Grow your audience with effective Facebook campaigns." },
     
-        { name: "Web Designing", image: web1, description: "Web design is the process of planning and organizing the content of a website to ensure it is accessible and shareable online. It combines aesthetic and functional elements to create the visual aspects of a site, including its colors, fonts, graphics, and user interface (see our guide on website design best practices)." },
-        { name: "Website Development", image: web2, description: "A website is an online space where you can share information for others to view. It could be details about you, your business, or subjects you are passionate about. Depending on the type of website, people can use it to shop, communicate, learn, or be entertained." },
+        { name: "Web Designing", image: web1, description: "Web design is the process of planning and organizing the content of a website to ensure it is accessible and shareable online. " },
+        { name: "Website Development", image: web2, description: "A website is an online space where you can share information for others to view. " },
         { name: "Mobile App Development", image: web3, description: "Building mobile apps for iOS and Android." },
         { name: "Desktop App", image: web4, description: "Developing desktop applications for various platforms." },
         { name: "Static Website", image: web5, description: "Simple, static websites for small businesses." },
@@ -83,7 +84,10 @@ const Services = () => {
 
                    
                     <p className="text-gray-600 text-justify px-10 text-2xl font-geologica  items-center  mt-10">{subService.description}</p>
-                  </motion.div>
+                     <div className="mt-20">
+                    <button className="border-2 border-slate-800 rounded-xl text-3xl  py-6 px-6 font-opensas font-bold text-white bg-gray-900">{subService.button} Read More</button>
+                    </div>
+                    </motion.div>
                 ))}
               </div>
             </motion.div>

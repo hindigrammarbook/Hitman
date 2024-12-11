@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
+    
     extend: {},
     animation: {
       'slide-left': 'slideLeft 10s linear infinite',
@@ -20,7 +21,10 @@ module.exports = {
     fontFamily: {
       geologica: ['Geologica', 'sans-serif'],
       times:['Tinos', 'serif'],
+      opensas:['Open Sans', 'sans-serif']
     },
+   
+
   },
   plugins: [],
 };

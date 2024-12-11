@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import image1 from "../assets/image1.png";
-import image2 from "../assets/image2.png";
-import image3 from "../assets/image3.png";
+import image1 from "../assets/Banner1.jpg";
+import image2 from "../assets/Banner2.jpg";
+import image3 from "../assets/Banner3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Home1 from "../assets/Home1.jpg"
@@ -19,8 +19,22 @@ import boy from "../assets/boy.png";
 import woman from "../assets/woman.png";
 import man from "../assets/man.png";
 import profile from "../assets/profile.png";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import CountUp from 'react-countup';
 
 const Home = () => {
+
+  const stats = [
+    { label: 'Clients', value: 250 },
+    { label: 'Projects Completed', value: 800 },
+    { label: 'Years of Experience', value: 10 },
+    { label: 'Rating', value: 4.9 },
+  ];
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -59,7 +73,7 @@ const Home = () => {
   return (
     <div>
       
-      <div className="h-screen w-screen bg-gray-100">
+      <div className="h-screen w-screen  bg-gray-100">
         <Slider {...sliderSettings}>
           {slides.map((slide) => (
             <div key={slide.id} className="relative h-screen w-screen">
@@ -84,7 +98,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className="flex flex-col   md:flex-row items-center justify-between bg-white min-h-screen pl-8">
+      <div className="flex flex-col   md:flex-row items-center justify-between min-h-screen pl-8">
    
       <div className="flex-1 bg- md:pr-12">
         <motion.h1
@@ -124,46 +138,29 @@ const Home = () => {
       </div>
 
   
-      <div className="flex-1 flex items-center justify-center relative">
-        <motion.img
-          src={Home1}
-          alt="Home1"
-          className="absolute w-full h-100 object-cover rounded-lg shadow-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 2,  repeat: Infinity, repeatDelay: 3 }}
-        />
-        <motion.img
-          src={Home2}
-          alt="Home2"
-          className="absolute w-full h-100 object-cover rounded-lg shadow-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{
-            duration: 3,
-            delay: 4,
-            repeat: Infinity,
-            repeatDelay: 3,
-          }}
-        />
-        <motion.img
-          src={Home3}
-          alt="Home3"
-          className="absolute w-full h-100 object-cover rounded-lg shadow-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{
-            duration: 2,
-            delay: 4,
-            repeat: Infinity,
-            repeatDelay: 3,
-          }}
-        />
-      </div>
+      <div className="relative w-full max-w-4xl mx-auto">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        className="rounded-lg shadow-lg"
+      >
+        <SwiperSlide>
+          <img src={Home1} alt="Home1" className="w-full h-auto object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Home2} alt="Home2" className="w-full h-auto object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Home3} alt="Home3" className="w-full h-auto object-cover" />
+        </SwiperSlide>
+      </Swiper>
     </div>
+    /</div>
 
 
     <div className="bg-gray-100 py-16">
@@ -233,10 +230,11 @@ const Home = () => {
       </div>
       </div>
       </div>
-
-   <div className="flex flex-col items-center  bg-slate-900 space-y-8">
+      
+   <div className=" bg-slate-900 space-y-8">
+    <div className="container pb-10  m-auto">
     <div className="text-center animate-fade-in">
-    <h1 className="text-6xl font-bold mt-10 mb-10 text-white">Meet Our Team</h1>
+    <h1 className="text-6xl font-bold mt-10 py-10 mb-10 text-white">Meet Our Team</h1>
     </div>
   <div className="grid grid-cols-2 pb-10  md:grid-cols-4 gap-8 animate-fade-up">
     <div className="flex flex-col px-10 justify-center items-center space-y-2">
@@ -275,17 +273,17 @@ const Home = () => {
       <h2 className="text-lg font-semibold  text-white">Sophia Lee</h2>
       <p className="text-sm text-gray-500">Designer</p>
     </div>
-    <div className="text-lg font-semibold   text-white">
+    <div className="flex flex-col items-center space-y-2">
     <img
         className="w-48 h-w-48 rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-300"
         src={man}
         alt="director"
       />
-      <h2 className="text-lg font-semibold  text-white">Michael Brown</h2>
+      <h2 className="text-lg font-semibold text-white">Michael Brown</h2>
       <p className="text-sm text-gray-500">CTO</p>
       </div>
     
-    <div className="text-lg font-semibold   text-white">
+    <div className="flex flex-col items-center space-y-2">
     <img
         className="w-48 h-w-48 rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-300"
         src={man}
@@ -296,6 +294,25 @@ const Home = () => {
       </div>
       </div>
     </div>
+    
+</div>
+
+<h2 className=" mt-10 mb-10 flex justify-center text-4xl font-bold font-opensas">Numbers Speaks Alot</h2>
+      <div className="flex flex-wrap items-center justify-center bg-gray-100 py-8">
+        
+      {stats.map((stat, index) => (
+        <div
+          key={index}
+          className="flex items-center justify-center w-screen md:w-1/4 py-4"
+        >
+          <div className="text-5xl gap-8 font-bold text-blue-500">
+            <CountUp start={0} end={stat.value} duration={4} decimals={stat.label === 'Rating' ? 1 : 0} />
+          </div>
+          <p className="pl-10 text-3xl font-semibold text-gray-700">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+
 </div>
 
 
