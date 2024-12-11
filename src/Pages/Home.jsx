@@ -13,7 +13,7 @@ import client1 from "../assets/circle.png";
 import client2 from "../assets/design.png";
 import client3 from "../assets/botanical.png";
 import client4 from "../assets/innova.png";
-import client5 from "../assets/innovate.png";
+import client5 from "../assets/Innovate.png";
 import client6 from "../assets/system.png";
 import boy from "../assets/boy.png";
 import woman from "../assets/woman.png";
