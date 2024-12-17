@@ -67,7 +67,7 @@ const About = () => {
           <p className=" mt-12 pt-2 text-3xl font-times text-yellow-50 px-52 ">We specialize in crafting data-driven strategies that deliver measurable results. Whether it’s boosting your online visibility through SEO, running high-converting ad campaigns, or engaging your audience on social media, we ensure your brand gets the attention it deserves.</p>
           </div>
  
-      <div className="h-auto flex flex-col pb-14 bg-blue-300 w-screen">
+      <div className="h-auto flex flex-col  bg-blue-300 w-screen">
 
     
       <div className="flex  h-64 mx-20  items-center">
@@ -182,6 +182,18 @@ const About = () => {
           </div>
           
     </div>
+
+      <div className="bg-blue-300 h-auto p-10">
+       
+        <h2 className="text-7xl mt-10 font-opensas mb-10 text-blue-950 text-center">Why Wait? Start Now</h2>
+
+        
+        <p className="text-white text-2xl text-center mt-10 ">Contact us today to create a custom digital marketing plan tailored to your startup’s success.</p>
+        
+        <p className="text-2xl mt-14 font-times font-bold px-10 text-justify text-slate-600">Digital marketing is the fuel that powers startup growth in today’s competitive environment. Whether you’re launching your product, building a customer base, or scaling operations, a solid digital marketing strategy can unlock the potential your startup needs.</p>
+
+        
+      </div>
 
 
     </div>
