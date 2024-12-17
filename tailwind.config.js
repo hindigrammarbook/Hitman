@@ -6,7 +6,9 @@ module.exports = {
     animation: {
       'slide-left': 'slideLeft 10s linear infinite',
       'slide-right': 'slideRight 10s linear infinite',
-    },
+      'fade-in': 'fadeIn 2s ease-in forwards',
+      
+    
     keyframes: {
       slideLeft: {
         '0%': { transform: 'translateX(0)' },
@@ -16,6 +18,14 @@ module.exports = {
         '0%': { transform: 'translateX(0)' },
         '100%': { transform: 'translateX(100%)' },
       },
+      fadeIn: {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
+      },
+     
+    
+    },
+    
     },
 
     fontFamily: {
@@ -26,5 +36,6 @@ module.exports = {
    
 
   },
-  plugins: [],
+  plugins: [
+  ],
 };

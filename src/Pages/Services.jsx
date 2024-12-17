@@ -85,7 +85,7 @@ const Services = () => {
                    
                     <p className="text-gray-600 text-justify px-10 text-2xl font-geologica  items-center  mt-10">{subService.description}</p>
                      <div className="mt-20">
-                    <button className="border-2 border-slate-800 rounded-xl text-3xl  py-6 px-6 font-opensas font-bold text-white bg-gray-900">{subService.button} Read More</button>
+                    <button className="border-2 border-slate-800 rounded-xl text-3xl  absolute bottom-10 right-44 py-6 px-6 font-opensas font-bold text-white bg-gray-900">{subService.button} Read More</button>
                     </div>
                     </motion.div>
                 ))}

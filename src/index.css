@@ -7,5 +7,83 @@
     overflow:hidden;
     margin:0;
     box-sizing: border-box;
-
 }
+
+/* Common Styles for Icons */
+.animated-icon {
+    position: absolute;
+    width: 70px; /* Adjust icon size */
+    height: 70px;
+    animation: float 5s infinite ease-in-out;
+    opacity: 0.8;
+  }
+  
+ 
+  .icon-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .icon-2 {
+    top: 30%;
+    right:30%;
+    animation-delay: 1s;
+  }
+  
+  .icon-3 {
+    top: 40%;
+    left: 10%;
+    animation-delay: 1s;
+  }
+  
+  .icon-4 {
+    top: 70%;
+    left: 10%;
+    animation-delay: 1s;
+  }
+  
+  .icon-5 {
+    top: 20%;
+    left: 80%;
+    animation-delay: 1s;
+  }
+  
+  .icon-6 {
+    top: 80%;
+    right: 10%;
+    animation-delay: 1s;
+  }
+  
+ 
+  .icon-7{
+    top:90%;
+    right:30%;
+    animation-delay: 1s;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-10px) rotate(15deg);
+    }
+    50% {
+      transform: translateY(10px) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-10px) rotate(-15deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+
+ 
+  
+  .text-fill {
+    color: transparent; 
+  -webkit-text-stroke: 1px gray; 
+  font-weight: bold;
+  }
+  
