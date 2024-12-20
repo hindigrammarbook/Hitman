@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
-  // Scroll event handler
+ 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -31,14 +31,14 @@ const Navbar = () => {
       <nav className="bg-gray-800 text-white py-2 px-4 shadow-md fixed w-full top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-6">
-            <div className="text-lg font-medium">Mail Us Today@DMagency.com</div>
+            <div className="text-lg font-medium">Mail Us : info@hitmandigital.com</div>
             <div className="flex space-x-6">
               
-              <a href="#" className="hover:text-violet-500">Company@ Devli,New Delhi</a>
+             <Link to="/contact"><p className="hover:text-violet-500">Free Digital Marketing Audit</p></Link> 
             </div>
             <div className="flex space-x-6">
               
-              <a href="#" className="hover:text-violet-500">Call at 674534-788</a>
+              <a href="#" className="hover:text-violet-500">Call at +91 8585939854</a>
             </div>
           </div>
         </div>

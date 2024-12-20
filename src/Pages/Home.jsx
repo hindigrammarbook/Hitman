@@ -8,6 +8,9 @@ import webDesign from "../assets/webDesign.png";
 import strategy from "../assets/strategy.png";
 
 import { Link } from "react-router-dom";
+import PPC from "../assets/PPC.png";
+import SEOO from "../assets/SEOO.png";
+import SMM from "../assets/SMM.png";
 
 import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.jpg";
@@ -18,14 +21,15 @@ import web from "../assets/web.png";
 import group from "../assets/group.png";
 import innovation from "../assets/innovation.png";
 import star from "../assets/star.png";
-
+import business from "../assets/business.png"
 import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
 import logo5 from "../assets/logo5.png";
 import AOS from "aos";
-
+import profession from "../assets/profession.png";
+import laptop from "../assets/laptop.png";
 
 import "aos/dist/aos.css";
 
@@ -50,7 +54,7 @@ const Home = () => {
       <div className="px-20 w-[50%]">
     <h1 className="text-8xl  text-blue-950  font-times font-bold">Hitman Digital</h1>
     <h1 className="text-8xl text-blue-950 font-times font-bold">Marketing Agency</h1>
-    <p className="mt-10 text-3xl  text-justify font-times font-bold text-slate-900"> Best Creative Digital Marketing Services For Startups that are tailored to fit your unique goals and challenges.</p>
+    <p className="mt-10 text-3xl  text-justify font-times  text-slate-900"> Best Creative Digital Marketing Services For Startups that are tailored to fit your unique goals and challenges.</p>
     <div className="flex  gap-10">
    <Link to="/services"><button  className=" text-3xl font-bold font-opensas mt-16  border-4 border-blue-950 bg-blue-950 text-white rounded-full  p-6   transition-all  " >Check Service</button></Link>
    <Link to="/contact"><button  className="  text-3xl font-bold font-opensas mt-16  border-4 border-blue-950 text-blue-950   rounded-full  p-6 transition-all  "  >Contact Now</button></Link>
@@ -63,6 +67,7 @@ const Home = () => {
 </div>
 
  <div className="h-[100vh]  flex  mt-10 ">
+  
     <div className="flex w-[40%] flex-col gap-14 bg-gray-700">
     <h2 className="text-7xl text-white  pt-20 px-20  leading-normal  font-bold font-times" data-aos="fade-right">Hitman Digital Marketing Agency -</h2> 
     <p className="text-4xl text-white  px-20   font-bold font-times" data-aos="fade-left">your affordable digital marketing agency in Delhi!</p>
@@ -149,6 +154,7 @@ const Home = () => {
           <p className="text-3xl font-times font-bold text-gray-700 ">Our Expertise in Digital Marketing</p>
           <h2 className="text-6xl font-times font-bold text-blue-950">Digital Marketing</h2>
           <h2 className="text-6xl font-times font-bold text-blue-950">Services</h2>
+          <p className="text-2xl font-times font-thin text-gray-700">hello</p>
 
           <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
             <div className="h-20 w-20 border-2 border-gray-800    rounded-full"   data-aos="zoom-in">
@@ -202,20 +208,39 @@ const Home = () => {
       
 
 
-      <div className="h-auto pb-20 ">
-        <h2 className="text-centre mt-8 mb-20  text-7xl font-times text-gray-700 font-bold flex justify-center items-center">Backbone of Our Company</h2>
-        <div className="px-10 flex flex-wrap gap-6 justify-center items-center">
-       
-          <div className="h-80 w-80  rounded-tl-3xl border-gray-950 border-4">
+      <div className="h-auto pb-44 ">
+        <h2 className="text-centre mt-8 mb-20  text-7xl font-times text-gray-700 font-bold flex justify-center items-center">Services Of Our Company</h2>
 
-          </div>
-          <div className="h-80 w-80  rounded-tl-3xl border-gray-950 border-4"></div>
-          <div className="h-80 w-80  rounded-tl-3xl border-gray-950 border-4"></div>
-          <div className="h-80 w-80  rounded-tl-3xl border-gray-950 border-4"></div>
-          <div className="h-80 w-80  rounded-tl-3xl border-gray-950 border-4"></div>
-
-        </div>
+      <div className="grid grid-cols-3 h-[90vh]  grid-rows-2 mx-20 ">
+      <div className="bg-gray-700 border-2">
+        <img src={business} className="h-full w-full" alt="" />
+        
       </div>
+      <div className="bg-white border-2 flex flex-col pt-6 justify-start  items-center">
+          <img src={SEOO}  className="h-20  w-20" alt="" />
+          <h2 className="text-gray-700 font-times pt-4 font-bold text-2xl">SEO</h2>
+          <p className="text-gray-700 font-times pt-4 px-10 text-justify text-2xl">Search engine optimization (SEO) is the practice of improving a website's ranking in search results to increase the amount of targeted traffic it receives.</p>
+      </div>
+      <div className="bg-gray-700 border-2">  
+        <img src={laptop} className="h-full w-full" alt="" />
+      </div>
+      <div className="bg-white border-2 flex flex-col pt-6 justify-start  items-center">
+          <img src={PPC}  className="h-20  w-20" alt="" />
+          <h2 className="text-gray-700 font-times pt-4 font-bold text-2xl">PPC</h2>
+          <p className="text-gray-700 font-times pt-4 px-10 text-justify text-2xl">Pay-per-click (PPC) is an online advertising model in which an advertiser pays a publisher every time an advertisement link is “clicked” on..</p>
+      </div>
+      <div className="bg-gray-700 border-2">
+      <img src={profession} className="h-full w-full" alt="" />
+      </div>
+      <div className="bg-white border-2 flex flex-col pt-6 justify-start  items-center">
+          <img src={SMM}  className="h-20  w-20" alt="" />
+          <h2 className="text-gray-700 font-times pt-4 font-bold text-2xl">SMO</h2>
+          <p className="text-gray-700 font-times pt-4 px-10 text-justify text-2xl">Social media optimization (SMO) is the use of social media sites to manage and enhance an organization's message and online presence.</p>
+      </div>
+      </div>
+
+
+      </div> 
 
 
       <div className="h-[100vh] flex flex-col  bg-gray-700">
@@ -226,7 +251,7 @@ const Home = () => {
 
         </div>
         <div className="flex justify-center h-auto gap-10 mx-20 mt-20 items-center">
-          <div className="flex border-2 rounded-md bg-gray-100 w-[25%] h-80 flex-col justify-start items-center  p-4 gap-4" >
+          <div className="flex border-2 rounded-md bg-gray-100 w-[25%] h-80 flex-col justify-start items-center  p-4 gap-4">
             <img src={star} className="h-20 w-20" alt="" />
             <p className="text-5xl text-center font-times text-gray-900">100%</p>
             <p className="text-5xl text-center font-times text-gray-900">Increased Revenue</p>
