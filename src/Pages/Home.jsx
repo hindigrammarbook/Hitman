@@ -6,12 +6,9 @@ import seo2 from "../assets/seo2.png";
 import network from "../assets/network.png";
 import webDesign from "../assets/webDesign.png";
 import strategy from "../assets/strategy.png";
-import seo from "../assets/seo.png";
-import pay from "../assets/Pay.png";
+
 import { Link } from "react-router-dom";
-import Dollar from "../assets/Dollar.png";
-import Social from "../assets/Social.png";
-import BJW from "../assets/BJW.png";
+
 import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.jpg";
 import 'swiper/css';
@@ -21,14 +18,14 @@ import web from "../assets/web.png";
 import group from "../assets/group.png";
 import innovation from "../assets/innovation.png";
 import star from "../assets/star.png";
-import Homebg from "../assets/Homebg.png";
+
 import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
 import logo5 from "../assets/logo5.png";
 import AOS from "aos";
-import bg2 from "../assets/bg2.jpg";
+
 
 import "aos/dist/aos.css";
 
@@ -42,20 +39,22 @@ const Home = () => {
   return (
     <div>
 
-<div className="h-[100vh] mt-28  relative">
+<div className="h-[100vh] relative mt-24">
   
   {/* <div className="absolute inset-0 bg-cover bg-center   opacity-20" style={{ backgroundImage:`url(${bg2})`}}></div> */}
 
   
-  <div className="flex flex-col pt-2 gap-10 justify-center items-center relative z-10" data-aos="fade-right"
+  <div className="flex flex-col pt-20 gap-10 justify-start items-start  z-10" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-    <h1 className="text-8xl px-20 text-blue-950  font-times font-bold">Hitman Digital</h1>
-    <h1 className="text-8xl px-20 text-blue-950 font-times font-bold">Marketing Agency</h1>
-    <p className="mt-10 text-3xl px-20 font-times font-bold text-slate-900"> Best Creative Digital Marketing Services For Startups that are tailored to fit your unique goals and challenges.</p>
-    <div className="flex justify-center items-center gap-10">
+      <div className="px-20 w-[50%]">
+    <h1 className="text-8xl  text-blue-950  font-times font-bold">Hitman Digital</h1>
+    <h1 className="text-8xl text-blue-950 font-times font-bold">Marketing Agency</h1>
+    <p className="mt-10 text-3xl  text-justify font-times font-bold text-slate-900"> Best Creative Digital Marketing Services For Startups that are tailored to fit your unique goals and challenges.</p>
+    <div className="flex  gap-10">
    <Link to="/services"><button  className=" text-3xl font-bold font-opensas mt-16  border-4 border-blue-950 bg-blue-950 text-white rounded-full  p-6   transition-all  " >Check Service</button></Link>
    <Link to="/contact"><button  className="  text-3xl font-bold font-opensas mt-16  border-4 border-blue-950 text-blue-950   rounded-full  p-6 transition-all  "  >Contact Now</button></Link>
+    </div>
     </div>
   </div>
   
