@@ -9,10 +9,11 @@
     box-sizing: border-box;
 }
 
-/* Common Styles for Icons */
+
+
 .animated-icon {
     position: absolute;
-    width: 70px; /* Adjust icon size */
+    width: 70px;
     height: 70px;
     animation: float 5s infinite ease-in-out;
     opacity: 0.8;
@@ -83,7 +84,24 @@
   
   .text-fill {
     color: transparent; 
-  -webkit-text-stroke: 1px gray; 
+  -webkit-text-stroke: 4px gray; 
   font-weight: bold;
   }
+
+  .jumping-image {
+    animation: jump 1s infinite;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust the height of the jump */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
   

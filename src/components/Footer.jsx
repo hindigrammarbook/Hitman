@@ -7,8 +7,8 @@ import DarkGlow from "./DarkGlow";
 const Footer = () => {
   return (
     <DarkGlow>
-    <footer className="bg-gray-900 dark-bg mt-14 font-geologica text-lg text-white py-6">
-     
+    <footer className="bg-gray-900 dark-bg   font-geologica text-lg text-white py-6">
+     {/* #EBFCFF */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-6">

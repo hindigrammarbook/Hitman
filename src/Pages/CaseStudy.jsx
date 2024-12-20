@@ -89,7 +89,7 @@ const CaseStudy = () => {
     <div className="bg-gradient-to-b mt-24 from-gray-900 via-gray-800 to-gray-900 min-h-screen p-8">
       
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-bold text-blue-500 mb-6">Case Studies</h1>
+        <h1 className="text-7xl font-bold text-slate-200 mb-6">Case Studies</h1>
         <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-12">
           Discover how we’ve partnered with clients to create success stories in
           digital marketing and development.
@@ -124,14 +124,14 @@ const CaseStudy = () => {
 
             
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-blue-400">
+              <h3 className="text-2xl font-semibold text-white">
                 {study.title}
               </h3>
               <p className="text-sm text-gray-400 italic mb-4">
                 {study.client} - {study.industry}
               </p>
               <p className="text-gray-300 mb-4">{study.description}</p>
-              <ul className="list-disc list-inside text-blue-300">
+              <ul className="list-disc list-inside text-white">
                 {study.results.map((result, i) => (
                   <li key={i}>{result}</li>
                 ))}
