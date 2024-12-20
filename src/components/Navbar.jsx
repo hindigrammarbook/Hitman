@@ -31,11 +31,7 @@ const Navbar = () => {
       <nav className="bg-gray-800 text-white py-2 px-4 shadow-md fixed w-full top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-6">
-<<<<<<< HEAD
             <div className="text-lg font-medium">Mail Us : info@hitmandigital.com</div>
-=======
-            <div className="text-lg font-medium">Mail Us info@hitmandigital.com </div>
->>>>>>> 8606995d087fa58cca89c7f5794980bcaa0bd440
             <div className="flex space-x-6">
               
              <Link to="/contact"><p className="hover:text-violet-500">Free Digital Marketing Audit</p></Link> 
