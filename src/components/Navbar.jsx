@@ -28,10 +28,10 @@ const Navbar = () => {
      
     <>
      
-      <nav className="bg-gray-800 text-white py-2 px-4 shadow-md fixed w-full top-0 z-20">
+      <nav className="bg-gray-800 text-white py-1 px-4 shadow-md fixed w-full top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-6">
-            <div className="text-lg font-medium">Mail Us : info@hitmandigital.com</div>
+            <div className="text-sm font-medium">Mail Us : info@hitmandigital.com</div>
             <div className="flex space-x-6">
               
              <Link to="/contact"><p className="hover:text-violet-500">Free Digital Marketing Audit</p></Link> 
@@ -45,15 +45,15 @@ const Navbar = () => {
       </nav>
 
       
-      <nav className={`bg-white  shadow-xl fixed w-full top-10 z-10 transition-transform ${isScrollingUp ? 'transform-none' : '-translate-y-20'}`}>
+      <nav className={`bg-white  shadow-xl fixed w-full top-8 z-10 transition-transform ${isScrollingUp ? 'transform-none' : '-translate-y-20'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-10">
             <div className="flex-shrink-0">
               <Link to="/"><img  src={logo} alt="Logo" className="h-10" /></Link>
             </div>
 
             <div className="hidden md:block">
-              <ul className="flex text-xl font-geologica space-x-8">
+              <ul className="flex text-sm font-geologica space-x-8">
                 <Link to="/" className="text-gray-600 hover:text-violet-600 cursor-pointer font-medium transition duration-200">
                   Home
                 </Link>
