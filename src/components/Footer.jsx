@@ -14,12 +14,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-6">
       
           <div>
-            <h2 className="text-3xl font-bold text-blue-300 mb-4">Hitman Digital Pvt Ltd</h2>
-            <p className="text-gray-400 mb-4">
+            <h2 className="text-2xl font-bold font-times text-gray-200 mb-4">Hitman Digital Pvt Ltd</h2>
+            <p className="text-white font-thin text-md  mb-4">
             Hitman Digital Pvt Ltd, we specialize in transforming ideas into impactful digital experiences. Our expertise in web design and web development ensures that your online presence not only stands out but also drives engagement and results.
             </p>
-            <div className="flex space-x-4">
-          <a href="#" className="hover:text-blue-500">
+            <div className="flex space-x-4">  
+          <a href="#" className= "hover:text-blue-500">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
           <a href="#" className="hover:text-blue-500">
@@ -39,8 +39,8 @@ const Footer = () => {
 
           
           <div>
-            <h3 className="text-xl font-semibold text-blue-300 mb-4">Services</h3>
-            <ul className="space-y-4 text-gray-400">
+            <h3 className="text-2xl font-bold font-times text-gray-300 mb-4">Services</h3>
+            <ul className="space-y-2 text-md font-t text-gray-200">
               <li>
                 <a href="#" className="hover:text-blue-500 transition duration-200">Website Designing</a>
               </li>
@@ -58,8 +58,8 @@ const Footer = () => {
 
         
           <div>
-            <h3 className="text-xl font-semibold text-blue-300 mb-4">Useful Links</h3>
-            <ul className="space-y-4 text-gray-400">
+            <h3 className="text-2xl font-bold font-times text-gray-300 mb-4">Useful Links</h3>
+            <ul className="space-y-2 font-times  text-white">
               <li>
                 <Link to ='/' className="hover:text-blue-500 transition duration-200">Home</Link>
               </li>
@@ -80,8 +80,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-blue-300 mb-4">Contact</h3>
-            <ul className="space-y-4 text-gray-400">
+            <h3 className="text-2xl font-bold text-gray-300 mb-4">Contact</h3>
+            <ul className="space-y-2 font-thin text-white">
               <li>
                 <a href="tel:+919811674268" className="hover:text-blue-500 transition duration-200">
                   +91-9811674268

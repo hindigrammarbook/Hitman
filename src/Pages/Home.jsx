@@ -206,9 +206,9 @@ const Home = () => {
             <p className="text-3xl text-center font-times text-gray-900">24</p>
             <p className="text-3xl text-center font-times text-gray-900">Expanded Market</p></div> 
           <div className="flex border-2 rounded-md bg-gray-100 w-[25%] h-64 flex-col justify-start items-center  p-4 gap-4" >
-          <img src={innovation} className="h-20 w-20" alt="" />
+          <img src={innovation} className="h-10 w-10" alt="" />
             <p className="text-3xl text-center font-times text-gray-900">84</p>
-            <p className="text-3xl text-center font-times text-gray-900">Enhanced Efficiency</p>
+            <p className="text-3xl text-center font-times text-gray-900">Efficiency</p>
           </div>
         </div>
 
