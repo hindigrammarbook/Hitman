@@ -2,7 +2,22 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     
-    extend: {},
+    extend: {
+      clipPath: {
+        'circle': 'circle(20% at 50% 100%)', 
+        'full': 'circle(150% at 50% 50%)',
+      },
+      backgroundImage: {
+        smmImage: "url('/src/assets/smm1.webp')",
+        seoImage:"url('/src/assets/seo1.webp')",
+        googleImage:"url('/src/assets/google ads 1.webp')",
+        LeadImage:"url('/src/assets/Lead Generation 1.webp')",
+        webImage:"url('/src/assets/web designing 1.webp')",
+        webDevImage:"url('/src/assets/web Development 1.webp')",
+        smoImage:"url('/src/assets/smo1.webp')",
+        appImage:"url('/src/assets/appImage.webp')",
+      },
+    },
     animation: {
       'slide-left': 'slideLeft 10s linear infinite',
       'slide-right': 'slideRight 10s linear infinite',

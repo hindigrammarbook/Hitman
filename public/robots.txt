@@ -1,0 +1,5 @@
+# robots.txt for https://hitmandigital.in/
+User-agent:*
+Allow: /
+
+Sitemap: https://hitmandigital.in/sitemap.xml

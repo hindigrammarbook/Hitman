@@ -2,12 +2,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import DarkGlow from "./DarkGlow";
+
+import { Helmet } from "react-helmet-async";
 
 const Footer = () => {
   return (
-    <DarkGlow>
-    <footer className="bg-gray-900 dark-bg   font-geologica text-lg text-white py-6">
+   <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+       </Helmet>
+    <footer className="bg-gray-900   font-geologica text-lg text-white py-6">
      {/* #EBFCFF */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
        
@@ -41,17 +45,24 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold font-times text-gray-300 mb-4">Services</h3>
             <ul className="space-y-2 text-md font-t text-gray-200">
+              <li>  
+                <Link to="/services/website-designing-services-in-delhi" className="hover:text-blue-500 transition duration-200" >Website Designing
+              </Link></li>
+           
               <li>
-                <a href="#" className="hover:text-blue-500 transition duration-200">Website Designing</a>
+                <Link to="/services/best-web-development-services-in-delhi"   className="hover:text-blue-500 transition duration-200">Website Development</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition duration-200">Website Development</a>
+                <Link to="/services/social-media-marketing-agency-in-delhi-ncr" className="hover:text-blue-500 transition duration-200">SMM</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition duration-200">Digital Marketing</a>
+                <Link to="/services/seo-services-in-delhi" className="hover:text-blue-500 transition duration-200">SEO</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition duration-200">SEO</a>
+                <Link to="/services/smo-services-in-delhi" className="hover:text-blue-500 transition duration-200">SMO</Link>
+              </li>
+              <li>
+                <Link to="/services/google-ads-services-in-delhi" className="hover:text-blue-500 transition duration-200">Google Ads</Link>
               </li>
             </ul>
           </div>
@@ -82,19 +93,15 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-300 mb-4">Contact</h3>
             <ul className="space-y-2 font-thin text-white">
+             
               <li>
-                <a href="tel:+919811674268" className="hover:text-blue-500 transition duration-200">
-                  +91-9811674268
+                <a href="tel:+918585939854" className="hover:text-blue-500 transition duration-200">
+                  +91-858-593-9854
                 </a>
               </li>
               <li>
-                <a href="tel:+919873184227" className="hover:text-blue-500 transition duration-200">
-                  +91-9873184227
-                </a>
-              </li>
-              <li>
-                <a href="mailto:HitmanDM@mail.net" className="hover:text-blue-500 transition duration-200">
-                HitmanDM@mail.net
+                <a href="mailto:info@hitmandigital.in" className="hover:text-blue-500 transition duration-200">
+                info@hitmandigital.in
                 </a>
               </li>
             </ul>
@@ -102,11 +109,11 @@ const Footer = () => {
         </div>
 
         <div className="mt-6 pt-6 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} <a href="https://in.linkedin.com/in/kalpanapatwal"> Hitman Digital Pvt Ltd</a> | All Rights Reserved</p>
+          <p>&copy; {new Date().getFullYear()} <a href="/"> Hitman Digital</a> Pvt Ltd | All Rights Reserved</p>
         </div>
       </div>
     </footer>
-    </DarkGlow>
+   </>
   );
 };
 

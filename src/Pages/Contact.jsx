@@ -1,13 +1,55 @@
-import React from "react";
+import React, { useState,useRef } from "react";
+import { Helmet } from "react-helmet-async";
+import emailjs from '@emailjs/browser';
 
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState({ submitting: false });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus({ submitting: true });
+
+    emailjs
+      .sendForm("service_umrbfel", "template_jbu3qdv", form.current, "naOX6wF1CBIEmB2B6")
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setStatus({ submitting: false });
+          setValues({ name: "", email: "", message: "" }); 
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setStatus({ submitting: false });
+        }
+      );
+  };
   return (
-    <div className="bg-sky-950 text-white mt-28 min-h-screen p-8">
+    <>
+    <Helmet>
+    <meta name="robots" content="index, follow" />
+    </Helmet>
+    <div className="bg-sky-950 text-white mt-10 min-h-screen p-8">
       <div className="container mx-auto">
        
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-white">Contact Us</h1>
+          <h1 className="text-5xl font-bold font-times text-white">Contact Us</h1>
           <p className="text-lg text-white mt-4 max-w-3xl mx-auto">
             At our digital marketing and web development agency, we specialize
             in driving success for your business in the digital world. Get in
@@ -82,7 +124,7 @@ const ContactUs = () => {
             <h2 className="text-4xl font-semibold text-darkblue-700 mb-4">
               Get in Touch
             </h2>
-            <p className="text-lg text-blue-700 mb-6">
+            <p className="text-lg text-white mb-6">
               We’re here to help! Call, email, or fill out the form to schedule
               a consultation with us.
             </p>
@@ -90,19 +132,19 @@ const ContactUs = () => {
               <p className="mb-4">
                 <span className="font-bold">Phone:</span>{" "}
                 <a
-                  href="tel:+1234567890"
+                  href="tel:8585939854"
                   className="text-darkblue-600 hover:underline"
                 >
-                  +1 (234) 567-890
+                  8585939854
                 </a>
               </p>
               <p>
                 <span className="font-bold">Email:</span>{" "}
                 <a
-                  href="mailto:info@yourcompany.com"
+                  href="mailto:info@hitmandigital.in"
                   className="text-darkblue-600 hover:underline"
                 >
-                  DMagency.com
+                 info@hitmandigital.in
                 </a>
               </p>
             </div>
@@ -122,7 +164,11 @@ const ContactUs = () => {
             <h2 className="text-4xl font-semibold  mb-4">
               Contact Us
             </h2>
-            <form className="bg-gradient-to-r  from-gray-50 to-slate-900 border-2 border-slate-950 p-6 rounded-lg shadow-lg">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="bg-gradient-to-r from-gray-50 to-slate-900 border-2 border-slate-950 p-6 rounded-lg shadow-lg"
+            >
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -133,8 +179,11 @@ const ContactUs = () => {
                 <input
                   type="text"
                   id="name"
-                  placeholder="Your Name"
+                  name="name"
+                  value={values.name}
+                  onChange={handleChange}
                   className="mt-1 p-2 w-full bg-white text-gray-800 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkblue-500"
+                  required
                 />
               </div>
               <div className="mb-4">
@@ -147,8 +196,12 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
-                  className="mt-1 p-2 w-full  bg-white text-gray-800 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkblue-500"
+                  className="mt-1 p-2 w-full bg-white text-gray-800 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkblue-500"
+                  required
                 />
               </div>
               <div className="mb-4">
@@ -161,21 +214,31 @@ const ContactUs = () => {
                 <textarea
                   id="message"
                   rows="4"
+                  name="message"
+                  value={values.message}
+                  onChange={handleChange}
                   placeholder="Your Message"
                   className="mt-1 p-2 w-full h-[200px] bg-white text-gray-800 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkblue-500"
+                  required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full py-2 bg-blue-950 text-white  text-xl rounded-md hover:bg-darkblue-700 transition"
+                disabled={status.submitting}
+                className={`w-full py-2 bg-blue-950 text-white text-xl rounded-md transition ${
+                  status.submitting
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-darkblue-700"
+                }`}
               >
-                Send Message
+                {status.submitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
